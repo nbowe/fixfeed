@@ -1,0 +1,3 @@
+[submodule "deps/libbert"]
+	path = deps/libbert
+	url = git://github.com/nbowe/libbert.git
