@@ -2,6 +2,9 @@
 #include <zmq_tick_publisher.h>
 #include <MarketData.h>
 
+
+using namespace fixlib;
+
 TEST(zmq_tick_publisher_test, tick){
 	bool received = false;
 	MarketData md("test_symbol");
@@ -20,7 +23,7 @@ TEST(zmq_tick_publisher_test, tick){
 	ASSERT_EQ(false, received);
 	pub.tick(md);
 	// needs a little time for the active object thread to process it and for zmq io thread to process it
-	boost::this_thread::sleep(boost::posix_time::millisec(10));
+	boost::this_thread::sleep(boost::posix_time::millisec(30));
 	received = sub.recv(&msg, ZMQ_NOBLOCK);
 	ASSERT_EQ(true, received);
 }

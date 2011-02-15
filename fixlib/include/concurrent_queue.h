@@ -1,8 +1,10 @@
 #ifndef concurrent_queue_h__
 #define concurrent_queue_h__
 
-#include <boost/thread.hpp>
 #include <queue>
+#include <boost/thread.hpp>
+
+namespace fixlib{
 
 // multiple writer, multiple consumer
 // based on Anthony Williams implementation (with added support for bounded size)
@@ -13,7 +15,7 @@ class concurrent_queue {
 public:
 
 	concurrent_queue():max_elements(0) {}
-	concurrent_queue(size_t max):max_elements(max) {}
+	explicit concurrent_queue(size_t max):max_elements(max) {}
 
 	// pushes an entry onto the queue.
 	// if the queue is at maximum, the current thread waits
@@ -71,5 +73,5 @@ private:
 	boost::condition_variable m_cond;
 };
 
-
+}
 #endif // concurrent_queue_h__

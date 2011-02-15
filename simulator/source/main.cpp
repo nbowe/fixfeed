@@ -6,6 +6,7 @@
 #include <quickfix/SessionSettings.h>
 #include <quickfix/FileStore.h>
 
+using namespace fixlib;
 
 int main() {
 	try{

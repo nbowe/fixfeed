@@ -1,16 +1,19 @@
 #ifndef SimulatorApplication_h__
 #define SimulatorApplication_h__
 
-#include <quickfix/Application.h>
-#include <quickfix/MessageCracker.h>
 #include <map>
-
-#include "MarketData.h"
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>
+#include <quickfix/Application.h>
+#include <quickfix/MessageCracker.h>
+
+#include <MarketData.h>
+
+
+namespace fixlib{
 
 class SubscriptionManager;
-
+class MarketManager;
 
 // Simple Simulator application
 
@@ -19,7 +22,7 @@ class SimulatorApplication
 	private FIX::MessageCracker
 {
 public:
-	SimulatorApplication(const FIX::SessionSettings&);
+	explicit SimulatorApplication(const FIX::SessionSettings&);
 	virtual ~SimulatorApplication();
 
 	// 
@@ -39,25 +42,17 @@ private:
 
 	virtual void onMessage( const FIX44::MarketDataRequest&, const FIX::SessionID& );
 
+	void validateMarketDataRequest( const FIX44::MarketDataRequest &m );
+	void getSymbolsFromMarketDataRequest( const FIX44::MarketDataRequest &m, std::vector<std::string> &symbols );
 
 
-	typedef boost::shared_ptr<MarketData> MarketData_ptr;
-	typedef std::vector<MarketData_ptr> MarketDataVec;
-	typedef std::map<std::string, MarketData_ptr> SymbolMarketDataMap;
-	MarketDataVec markets;
-	SymbolMarketDataMap symbol_to_market_data;
-	FIX::Mutex market_mutex;
 	void initMarketData();
-	void simulateMarketEvent(MarketData_ptr);
-	// get a snapshot of MarketData for a symbol at a point in time.
-	MarketData getMarketDataForSymbol(const std::string& symbol);
-	bool symbolExists(const std::string& symbol) const;
-
 
 	const FIX::SessionSettings& settings;
+	boost::scoped_ptr<MarketManager> market_manager;
 	boost::scoped_ptr<SubscriptionManager> subscription_manager;
 };
 
 
-
+}
 #endif // SimulatorApplication_h__

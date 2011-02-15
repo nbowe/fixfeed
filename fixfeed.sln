@@ -17,6 +17,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mqfeeder", "mqfeeder\mqfeed
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fixlib", "fixlib\fixlib.vcproj", "{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{641C5F36-32EE-4323-B740-992B651CF9D6} = {641C5F36-32EE-4323-B740-992B651CF9D6}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fixlib_test", "fixlib_test\fixlib_test.vcproj", "{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -26,32 +29,51 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fixlib_test", "fixlib_test\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-md", "deps\gtest-1.5.0\msvc\gtest-md.vcproj", "{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libzmq", "deps\zeromq2\builds\msvc\libzmq\libzmq.vcproj", "{641C5F36-32EE-4323-B740-992B651CF9D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
+		WithOpenPGM|Win32 = WithOpenPGM|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.Debug|Win32.ActiveCfg = Debug|Win32
 		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.Debug|Win32.Build.0 = Debug|Win32
 		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.Release|Win32.ActiveCfg = Release|Win32
 		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.Release|Win32.Build.0 = Release|Win32
+		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.WithOpenPGM|Win32.ActiveCfg = Release|Win32
+		{B7629A05-11FD-4762-BBE4-A496B5DF9BA7}.WithOpenPGM|Win32.Build.0 = Release|Win32
 		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.Debug|Win32.ActiveCfg = Debug|Win32
 		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.Debug|Win32.Build.0 = Debug|Win32
 		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.Release|Win32.ActiveCfg = Release|Win32
 		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.Release|Win32.Build.0 = Release|Win32
+		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.WithOpenPGM|Win32.ActiveCfg = Release|Win32
+		{3DA3BD77-3B28-42B5-BEC1-89626F4BA82C}.WithOpenPGM|Win32.Build.0 = Release|Win32
 		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.Debug|Win32.ActiveCfg = Debug|Win32
 		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.Debug|Win32.Build.0 = Debug|Win32
 		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.Release|Win32.ActiveCfg = Release|Win32
 		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.Release|Win32.Build.0 = Release|Win32
+		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.WithOpenPGM|Win32.ActiveCfg = Release|Win32
+		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}.WithOpenPGM|Win32.Build.0 = Release|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Debug|Win32.Build.0 = Debug|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Release|Win32.ActiveCfg = Release|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Release|Win32.Build.0 = Release|Win32
+		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.WithOpenPGM|Win32.ActiveCfg = Release|Win32
+		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.WithOpenPGM|Win32.Build.0 = Release|Win32
 		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Debug|Win32.ActiveCfg = Debug|Win32
 		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Debug|Win32.Build.0 = Debug|Win32
 		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Release|Win32.ActiveCfg = Release|Win32
 		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Release|Win32.Build.0 = Release|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.WithOpenPGM|Win32.ActiveCfg = Release|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.WithOpenPGM|Win32.Build.0 = Release|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Debug|Win32.Build.0 = Debug|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Release|Win32.ActiveCfg = Release|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.Release|Win32.Build.0 = Release|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.WithOpenPGM|Win32.ActiveCfg = WithOpenPGM|Win32
+		{641C5F36-32EE-4323-B740-992B651CF9D6}.WithOpenPGM|Win32.Build.0 = WithOpenPGM|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

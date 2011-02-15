@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <concurrent_queue.h>
 
+using namespace fixlib;
 
 TEST(concurrent_queue_test, ctor_post_conditions) {
 	concurrent_queue<int> q;

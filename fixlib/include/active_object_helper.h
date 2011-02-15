@@ -1,11 +1,12 @@
 #ifndef active_object_helper_h__
 #define active_object_helper_h__
 
-#include <concurrent_queue.h>
 #include <boost/function.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/thread.hpp>
+#include <concurrent_queue.h>
 
+namespace fixlib {
 
 // helper for the Active Object pattern
 // see Sutters article at http://www.drdobbs.com/high-performance-computing/225700095
@@ -18,7 +19,7 @@ public:
 	void send(const boost::function0<void>& f);
 	
 	// call a func on the thread and wait for the response
-	// this is like gen_server:call in Erlang
+	// this is a bit like gen_server:call in Erlang
 	template <typename R>
 	R call(const boost::function0<R>& f){
 		concurrent_queue<R> return_queue;
@@ -51,6 +52,6 @@ private:
 	boost::scoped_ptr<boost::thread> m_thread;
 	bool m_exit;
 };
-
+}
 
 #endif // libnb_active_object_helper_h__

@@ -3,10 +3,12 @@
 
 #include <string>
 
+namespace fixlib{
 class MarketData {
 public:
 	MarketData():symbol(),bid_price(),bid_quantity(),offer_price(),offer_quantity() {}
 	MarketData(const std::string& s):symbol(s),bid_price(),bid_quantity(),offer_price(),offer_quantity() {}
+	void set_symbol(const std::string s) {symbol=s;}
 	void set_bid_price(double price) {bid_price = price;}
 	void set_bid_quantity(int qty) {bid_quantity = qty;}
 	void set_offer_price(double price) {offer_price = price;}
@@ -24,5 +26,5 @@ private:
 	double offer_price;
 	int offer_quantity;
 };
-
+}
 #endif // MarketData_h__

@@ -1,6 +1,7 @@
-
 #include <gtest/gtest.h>
 #include <MarketData.h>
+
+using namespace fixlib;
 
 TEST(MarketDataTest, default_ctor ){
 	MarketData md;

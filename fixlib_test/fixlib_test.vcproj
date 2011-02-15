@@ -62,9 +62,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="gtestd.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="..\deps\gtest-1.5.0\msvc\gtest-md\Debug"
+				AdditionalLibraryDirectories="..\deps\gtest-1.5.0\msvc\fixfeed\Debug"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				OptimizeReferences="1"
@@ -186,6 +185,10 @@
 			</File>
 			<File
 				RelativePath=".\MarketDataTest.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\MarketManagerTest.cpp"
 				>
 			</File>
 			<File

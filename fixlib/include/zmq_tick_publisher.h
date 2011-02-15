@@ -1,11 +1,14 @@
 #ifndef zmq_tick_publisher_h__
 #define zmq_tick_publisher_h__
 
-#include <tick_publisher.h>
-#include <zmq.hpp>
-#include <boost/scoped_ptr.hpp>
 #include <string>
+#include <boost/scoped_ptr.hpp>
+#include <zmq.hpp>
 #include <active_object_helper.h>
+#include <tick_publisher.h>
+
+
+namespace fixlib{
 
 class zmq_tick_publisher : public tick_publisher {
 public:
@@ -21,6 +24,7 @@ private:
 	active_object_helper m_active_object;
 	zmq::socket_t* m_socket;
 };
+}
 
 
 #endif // zmq_tick_publisher_h__

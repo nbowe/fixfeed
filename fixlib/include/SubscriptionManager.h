@@ -10,6 +10,9 @@
 #include "Subscription.h"
 #include <quickfix/Mutex.h>
 
+namespace fixlib{
+
+
 
 // SubscriptionManager
 // Purpose: manages which sessions are subscribed to which symbols. (Also tracks req_id as needed by FIX)
@@ -72,5 +75,5 @@ private:
 	mutable FIX::Mutex subscriptions_mutex;
 };
 
-
+}
 #endif // SubscriptionManager_h__

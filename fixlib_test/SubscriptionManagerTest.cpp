@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <SubscriptionManager.h>
 
+using namespace fixlib;
 
 struct test_notifier{
 	test_notifier(): notified(0){};

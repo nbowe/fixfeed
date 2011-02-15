@@ -10,7 +10,7 @@
 #include <zmq_tick_publisher.h>
 #include <MQFeederApplication.h>
 
-
+using namespace fixlib;
 
 int main() {
 	try{

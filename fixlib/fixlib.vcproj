@@ -168,6 +168,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\source\MarketManager.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\source\MQFeederApplication.cpp"
 				>
 			</File>
@@ -211,6 +215,10 @@
 			</File>
 			<File
 				RelativePath=".\include\MarketData.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\MarketManager.h"
 				>
 			</File>
 			<File
