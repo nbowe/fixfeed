@@ -21,7 +21,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			CharacterSet="1"
+			CharacterSet="0"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -41,9 +41,10 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../deps/gtest-1.5.0/include"
+				AdditionalIncludeDirectories="../deps/gtest-1.5.0/include;../fixlib/include;../deps/quickfix/include;../deps/zeromq2/include;../deps/libbert/include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
+				ExceptionHandling="2"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"
@@ -96,7 +97,7 @@
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
-			CharacterSet="1"
+			CharacterSet="0"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -118,7 +119,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="../deps/gtest-1.5.0/include"
+				AdditionalIncludeDirectories="../deps/gtest-1.5.0/include;../fixlib/include;../deps/quickfix/include;../deps/zeromq2/include;../deps/libbert/include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -176,7 +177,27 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\concurrent_queue_test.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\MarketDataTest.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SubscriptionManagerTest.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SubscriptionTest.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\zmq_tick_publisher_test.cpp"
 				>
 			</File>
 		</Filter>

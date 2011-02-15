@@ -17,7 +17,6 @@ class SubscriptionManager;
 class SimulatorApplication
 	: public FIX::Application,
 	private FIX::MessageCracker
-
 {
 public:
 	SimulatorApplication(const FIX::SessionSettings&);

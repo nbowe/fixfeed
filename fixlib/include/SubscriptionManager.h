@@ -16,11 +16,11 @@
 // 
 // Acting on subscribers is done through notifySubscribers(). This keeps the work done in notifying them decoupled
 // from the process of managing the subscriptions. Eg you could use it for more than market data subscriptions (news feeds?).
-// I considered allowing addSubscription() to register a function thats used for notifying that client
-// that way we could support notifying a subset of clients over, say, HTTP or email. But its not necessary.
 
 class SubscriptionManager {
 public:
+	SubscriptionManager();
+	~SubscriptionManager();
 	typedef boost::function1<void, const Subscription&> notify_func;
 
 	void addSubscription(const FIX::SessionID&, const std::string& symbol, const std::string& req_id );
@@ -28,7 +28,12 @@ public:
 	void deleteAllSubscriptions(const FIX::SessionID&);
 	void notifySubscribers(const std::string& symbol, const notify_func& f);
 
+	// the following funcs are used for testing and debugging
+	// they should not be used in production code as there is no guarantee that the value will be accurate on return
+	// due to the fact that a subscription manager can be accessed from multiple threads
+	size_t debug_size() const;
 private:
+
 	// tags for our multi index container
 	struct session_id_tag{};
 	struct subscription_tag{};
@@ -64,7 +69,7 @@ private:
 	typedef subscriptions_container::index<symbol_tag>::type symbol_index_type;
 
 	subscriptions_container subscriptions;
-	FIX::Mutex subscriptions_mutex;
+	mutable FIX::Mutex subscriptions_mutex;
 };
 
 

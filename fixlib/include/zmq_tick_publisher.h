@@ -19,7 +19,7 @@ private:
 	void tick_(const MarketData& md);
 
 	active_object_helper m_active_object;
-	boost::scoped_ptr<zmq::socket_t> m_socket;
+	zmq::socket_t* m_socket;
 };
 
 

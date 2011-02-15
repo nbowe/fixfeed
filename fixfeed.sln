@@ -20,8 +20,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fixlib", "fixlib\fixlib.vcp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fixlib_test", "fixlib_test\fixlib_test.vcproj", "{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}"
 	ProjectSection(ProjectDependencies) = postProject
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8} = {C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}
 		{1B9F25EF-87F1-4408-B33B-5C9F908DAAAF} = {1B9F25EF-87F1-4408-B33B-5C9F908DAAAF}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest-md", "deps\gtest-1.5.0\msvc\gtest-md.vcproj", "{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +48,10 @@ Global
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Debug|Win32.Build.0 = Debug|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Release|Win32.ActiveCfg = Release|Win32
 		{D23E42B0-0EEB-4DFB-B3F9-6FCABB138011}.Release|Win32.Build.0 = Release|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Debug|Win32.Build.0 = Debug|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Release|Win32.ActiveCfg = Release|Win32
+		{C8F6C172-56F2-4E76-B5FA-C3B423B31BE8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

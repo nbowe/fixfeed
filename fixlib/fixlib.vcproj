@@ -44,6 +44,7 @@
 				AdditionalIncludeDirectories="./include;../deps/quickfix/include;../deps/zeromq2/include;../deps/libbert/include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
+				ExceptionHandling="2"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"

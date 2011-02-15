@@ -5,6 +5,13 @@
 
 using namespace boost::multi_index;
 
+
+SubscriptionManager::SubscriptionManager(){
+}
+
+SubscriptionManager::~SubscriptionManager(){
+}
+
 void SubscriptionManager::addSubscription(const FIX::SessionID& session, const std::string& symbol, const std::string& req_id ){
 	FIX::Locker l(subscriptions_mutex);
 	Subscription subscription(session, symbol, req_id);
@@ -47,4 +54,10 @@ void SubscriptionManager::notifySubscribers( const std::string& symbol, const no
 	BOOST_FOREACH(const Subscription& s, targets){
 		f(s);
 	}
+}
+
+size_t SubscriptionManager::debug_size() const
+{
+	FIX::Locker l(subscriptions_mutex);
+	return subscriptions.size();
 }
