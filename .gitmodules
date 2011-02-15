@@ -1,3 +1,9 @@
 [submodule "deps/libbert"]
 	path = deps/libbert
 	url = git://github.com/nbowe/libbert.git
+[submodule "deps/zeromq2"]
+	path = deps/zeromq2
+	url = git://github.com/zeromq/zeromq2.git
+[submodule "deps/pyzmq"]
+	path = deps/pyzmq
+	url = git://github.com/zeromq/pyzmq.git
