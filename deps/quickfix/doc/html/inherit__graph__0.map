@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_f_i_x_1_1_application.html" title="This interface must be implemented to define what your FIX application does." alt="" coords="5,32,117,61"/>
+<area shape="rect" id="node3" href="$class_f_i_x_1_1_null_application.html" title="An empty implementation of an Application." alt="" coords="195,5,328,35"/>
+<area shape="rect" id="node5" href="$class_f_i_x_1_1_synchronized_application.html" title="This is a special implementation of the Application interface that takes in another..." alt="" coords="167,59,356,88"/>
+</map>

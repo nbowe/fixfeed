@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_f_i_x_1_1_log_factory.html" title="This interface must be implemented to create a Log." alt="" coords="7,32,119,61"/>
+<area shape="rect" id="node3" href="$class_f_i_x_1_1_file_log_factory.html" title="Creates a file based implementation of Log." alt="" coords="179,5,312,35"/>
+<area shape="rect" id="node5" href="$class_f_i_x_1_1_screen_log_factory.html" title="Creates a screen based implementation of Log." alt="" coords="168,59,323,88"/>
+</map>

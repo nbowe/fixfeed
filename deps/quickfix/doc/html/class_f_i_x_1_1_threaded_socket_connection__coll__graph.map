@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_responder.html" title="Interface implements sending on and disconnecting a transport." alt="" coords="501,5,611,35"/>
+<area shape="rect" id="node10" href="$class_f_i_x_1_1_session.html" title="Maintains the state and implements the logic of a FIX session." alt="" coords="844,325,937,355"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_log.html" title="This interface must be implemented to log messages and events." alt="" coords="193,107,263,136"/>
+<area shape="rect" id="node12" href="$class_f_i_x_1_1_session_state.html" title="Maintains all of state for the Session class." alt="" coords="493,213,619,243"/>
+<area shape="rect" id="node6" href="$class_f_i_x_1_1_application.html" title="This interface must be implemented to define what your FIX application does." alt="" coords="500,156,612,185"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_parser.html" title="Parses FIX messages off an input stream." alt="" coords="848,213,933,243"/>
+<area shape="rect" id="node14" href="$class_f_i_x_1_1_message_store.html" title="This interface must be implemented to store and retrieve messages and sequence numbers..." alt="" coords="163,215,293,244"/>
+<area shape="rect" id="node18" href="$class_f_i_x_1_1_utc_time_stamp.html" title="Date and Time represented in UTC." alt="" coords="161,309,295,339"/>
+<area shape="rect" id="node20" href="$struct_f_i_x_1_1_date_time.html" title="Date and Time stored as a Julian day number and number of milliseconds since midnight..." alt="" coords="7,396,108,425"/>
+<area shape="rect" id="node39" href="$class_f_i_x_1_1_utc_time_only.html" title="Time only represented in UTC." alt="" coords="167,525,289,555"/>
+<area shape="rect" id="node23" href="$class_f_i_x_1_1_mutex.html" title="Portable implementation of a mutex." alt="" coords="187,372,269,401"/>
+<area shape="rect" id="node26" href="$class_f_i_x_1_1_session_i_d.html" title="Unique session id consists of BeginString, SenderCompID and TargetCompID." alt="" coords="503,349,609,379"/>
+<area shape="rect" id="node29" href="$class_f_i_x_1_1_message_store_factory.html" title="This interface must be implemented to create a MessageStore." alt="" coords="468,403,644,432"/>
+<area shape="rect" id="node31" href="$class_f_i_x_1_1_data_dictionary_provider.html" title="Queries for DataDictionary based on appropriate version of FIX." alt="" coords="467,456,645,485"/>
+<area shape="rect" id="node33" href="$class_f_i_x_1_1_data_dictionary.html" title="Represents a data dictionary for a version of FIX." alt="" coords="161,456,295,485"/>
+<area shape="rect" id="node35" href="$class_f_i_x_1_1_log_factory.html" title="This interface must be implemented to create a Log." alt="" coords="500,509,612,539"/>
+<area shape="rect" id="node37" href="$class_f_i_x_1_1_time_range.html" title="Keeps track of when session is active." alt="" coords="500,563,612,592"/>
+</map>

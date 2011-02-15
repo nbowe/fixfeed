@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_log.html" title="This interface must be implemented to log messages and events." alt="" coords="5,85,75,115"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_utc_time_stamp.html" title="Date and Time represented in UTC." alt="" coords="99,85,232,115"/>
+<area shape="rect" id="node6" href="$struct_f_i_x_1_1_date_time.html" title="Date and Time stored as a Julian day number and number of milliseconds since midnight..." alt="" coords="115,5,216,35"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_mutex.html" title="Portable implementation of a mutex." alt="" coords="256,85,339,115"/>
+</map>

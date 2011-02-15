@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_log.html" title="This interface must be implemented to log messages and events." alt="" coords="24,43,93,72"/>
+<area shape="rect" id="node10" href="$class_f_i_x_1_1_null_log.html" title="Null implementation of Log." alt="" coords="267,88,357,117"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_application.html" title="This interface must be implemented to define what your FIX application does." alt="" coords="256,141,368,171"/>
+<area shape="rect" id="node6" href="$class_f_i_x_1_1_message_store_factory.html" title="This interface must be implemented to create a MessageStore." alt="" coords="224,195,400,224"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_log_factory.html" title="This interface must be implemented to create a Log." alt="" coords="256,248,368,277"/>
+<area shape="rect" id="node13" href="$class_f_i_x_1_1_mutex.html" title="Portable implementation of a mutex." alt="" coords="271,301,353,331"/>
+<area shape="rect" id="node15" href="$class_f_i_x_1_1_session_settings.html" title="Container for setting dictionaries mapped to sessions." alt="" coords="241,355,383,384"/>
+<area shape="rect" id="node17" href="$class_f_i_x_1_1_dictionary.html" title="For storage and retrieval of key/value pairs." alt="" coords="5,355,112,384"/>
+</map>

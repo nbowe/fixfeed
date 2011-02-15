@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$struct_f_i_x_1_1_socket_close_failed.html" title="Socket close operation failed." alt="" coords="5,160,163,189"/>
+<area shape="rect" id="node7" href="$struct_f_i_x_1_1_socket_recv_failed.html" title="Socket recv operation failed." alt="" coords="187,160,339,189"/>
+<area shape="rect" id="node9" href="$struct_f_i_x_1_1_socket_send_failed.html" title="Socket send operation failed." alt="" coords="363,160,517,189"/>
+<area shape="rect" id="node2" href="$struct_f_i_x_1_1_exception.html" title="Base QuickFIX exception type." alt="" coords="209,5,316,35"/>
+</map>

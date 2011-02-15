@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html>
+  <head>
+    <title>Unit Tests</title>
+    <H1>Unit Tests</H1>
+  </head>
+  <body>
+
+  <p>
+  QuickFIX comes with a comprehensive suite of automated unit tests. These tests are run by a
+  framework called <a href="http://unittest-cpp.sourceforge.net">UnitTest++</a>. UnitTest++ allows developers to test
+  C++ code by writing code that calls functions on objects and asserting correct behavior. These
+  test verifies not only that the code works correctly, but also that it works the same on all
+  platforms.
+  </p>
+
+  <p>
+  An example of one of the unit tests is provided below. This sample shows the setup and
+  execution of the test that verifies our Parser object can correctly extract messages from a stream.
+  </p>
+
+  <PRE>
+  struct readFixMessageFixture
+  {
+    readFixMessageFixture()
+    {
+      fixMsg1 = "8=FIX.4.2\0019=12\00135=A\001108=30\00110=31\001";
+      fixMsg2 = "8=FIX.4.2\0019=17\00135=4\00136=88\001123=Y\00110=34\001";
+      fixMsg3 = "8=FIX.4.2\0019=19\00135=A\001108=30\0019710=8\00110=31\001";
+
+      object.addToStream( fixMsg1 + fixMsg2 + fixMsg3 );
+    }
+
+    std::string fixMsg1;
+    std::string fixMsg2;
+    std::string fixMsg3;
+    Parser object;
+  };
+
+  TEST_FIXTURE(readFixMessageFixture, readFixMessage)
+  {
+    std::string readFixMsg1;
+    CHECK( object.readFixMessage( readFixMsg1 ) );
+    CHECK_EQUAL( fixMsg1, readFixMsg1 );
+
+    std::string readFixMsg2;
+    CHECK( object.readFixMessage( readFixMsg2 ) );
+    CHECK_EQUAL( fixMsg2, readFixMsg2 );
+
+    std::string readFixMsg3;
+    CHECK( object.readFixMessage( readFixMsg3 ) );
+    CHECK_EQUAL( fixMsg3, readFixMsg3 );
+  }
+  </PRE>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_log_factory.html" title="This interface must be implemented to create a Log." alt="" coords="5,101,117,131"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_log.html" title="This interface must be implemented to log messages and events." alt="" coords="141,101,211,131"/>
+<area shape="rect" id="node6" href="$class_f_i_x_1_1_session_settings.html" title="Container for setting dictionaries mapped to sessions." alt="" coords="235,101,376,131"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_dictionary.html" title="For storage and retrieval of key/value pairs." alt="" coords="252,5,359,35"/>
+</map>
