@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_threaded_socket_acceptor.html" title="Threaded Socket implementation of Acceptor." alt="" coords="800,188,995,217"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_acceptor.html" title="Base for classes which act as an acceptor for incoming connections." alt="" coords="596,157,695,187"/>
+<area shape="rect" id="node6" href="$class_f_i_x_1_1_log.html" title="This interface must be implemented to log messages and events." alt="" coords="24,32,93,61"/>
+<area shape="rect" id="node14" href="$class_f_i_x_1_1_null_log.html" title="Null implementation of Log." alt="" coords="267,77,357,107"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_application.html" title="This interface must be implemented to define what your FIX application does." alt="" coords="256,131,368,160"/>
+<area shape="rect" id="node10" href="$class_f_i_x_1_1_message_store_factory.html" title="This interface must be implemented to create a MessageStore." alt="" coords="224,184,400,213"/>
+<area shape="rect" id="node12" href="$class_f_i_x_1_1_log_factory.html" title="This interface must be implemented to create a Log." alt="" coords="256,237,368,267"/>
+<area shape="rect" id="node17" href="$class_f_i_x_1_1_session_settings.html" title="Container for setting dictionaries mapped to sessions." alt="" coords="241,291,383,320"/>
+<area shape="rect" id="node19" href="$class_f_i_x_1_1_dictionary.html" title="For storage and retrieval of key/value pairs." alt="" coords="5,291,112,320"/>
+<area shape="rect" id="node21" href="$class_f_i_x_1_1_mutex.html" title="Portable implementation of a mutex." alt="" coords="604,211,687,240"/>
+</map>

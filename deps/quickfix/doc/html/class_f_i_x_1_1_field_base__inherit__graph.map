@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_f_i_x_1_1_bool_field.html" title="Field that contains a boolean value." alt="" coords="191,5,292,35"/>
+<area shape="rect" id="node5" href="$class_f_i_x_1_1_char_field.html" title="Field that contains a character value." alt="" coords="191,59,292,88"/>
+<area shape="rect" id="node7" href="$class_f_i_x_1_1_check_sum_field.html" title="Field that contains a checksum value." alt="" coords="172,112,311,141"/>
+<area shape="rect" id="node9" href="$class_f_i_x_1_1_double_field.html" title="Field that contains a double value." alt="" coords="184,165,299,195"/>
+<area shape="rect" id="node11" href="$class_f_i_x_1_1_int_field.html" title="Field that contains an integer value." alt="" coords="196,219,287,248"/>
+<area shape="rect" id="node13" href="$class_f_i_x_1_1_string_field.html" title="MSC doesn&#39;t support partial template specialization so we have this." alt="" coords="187,272,296,301"/>
+<area shape="rect" id="node15" href="$class_f_i_x_1_1_utc_date_field.html" title="Field that contains a UTC date value." alt="" coords="180,325,303,355"/>
+<area shape="rect" id="node17" href="$class_f_i_x_1_1_utc_time_only_field.html" title="Field that contains a UTC time value." alt="" coords="167,379,316,408"/>
+<area shape="rect" id="node19" href="$class_f_i_x_1_1_utc_time_stamp_field.html" title="Field that contains a UTC time stamp value." alt="" coords="160,432,323,461"/>
+</map>

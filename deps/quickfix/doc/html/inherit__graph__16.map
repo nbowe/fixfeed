@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_f_i_x_1_1_d_o_m_node.html" title="Interface that represents node from underlying XML parser." alt="" coords="7,32,113,61"/>
+<area shape="rect" id="node3" href="$class_f_i_x_1_1_l_i_b_x_m_l___d_o_m_node.html" title="XML node as represented by libxml." alt="" coords="164,5,321,35"/>
+<area shape="rect" id="node5" href="$class_f_i_x_1_1_m_s_x_m_l___d_o_m_node.html" title="XML node as represented by msxml." alt="" coords="163,59,323,88"/>
+</map>

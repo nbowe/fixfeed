@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_f_i_x_1_1_message_store_factory.html" title="This interface must be implemented to create a MessageStore." alt="" coords="5,59,181,88"/>
+<area shape="rect" id="node3" href="$class_f_i_x_1_1_file_store_factory.html" title="Creates a file based implementation of MessageStore." alt="" coords="243,5,387,35"/>
+<area shape="rect" id="node5" href="$class_f_i_x_1_1_memory_store_factory.html" title="Creates a memory based implementation of MessageStore." alt="" coords="229,59,400,88"/>
+<area shape="rect" id="node7" href="$class_f_i_x_1_1_null_store_factory.html" title="Null implementation of MessageStore." alt="" coords="243,112,387,141"/>
+</map>

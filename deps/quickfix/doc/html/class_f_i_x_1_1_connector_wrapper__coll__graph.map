@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_f_i_x_1_1_socket_monitor_1_1_strategy.html" title="FIX::SocketMonitor::Strategy" alt="" coords="5,101,195,131"/>
+<area shape="rect" id="node4" href="$class_f_i_x_1_1_socket_connector.html" title="Connects sockets to remote ports and addresses." alt="" coords="219,101,365,131"/>
+<area shape="rect" id="node6" href="$class_f_i_x_1_1_socket_monitor.html" title="Monitors events on a collection of sockets." alt="" coords="227,5,357,35"/>
+<area shape="rect" id="node8" href="$class_f_i_x_1_1_socket_connector_1_1_strategy.html" title="FIX::SocketConnector::Strategy" alt="" coords="389,101,595,131"/>
+</map>
